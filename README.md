@@ -1,6 +1,18 @@
-# argocd
+# Edited by Amir Alfallal
+## Edited by Amir Alfallal
+### Edited by Amir Alfallal
 
-### Making argocd manage itself
+```bash
+# First deploy argocd with the provided kustomization
+kustomize build . | k apply -f -
+
+# Now create an argocd application that will point to that kustomization so that any change in the files gets reflected
+k apply -f argocd-app.yaml
+```
+# Edited by Amir Alfallal
+## Edited by Amir Alfallal
+### Edited by Amir Alfallal
+
 ```bash
 # First deploy argocd with the provided kustomization
 kustomize build . | k apply -f -
